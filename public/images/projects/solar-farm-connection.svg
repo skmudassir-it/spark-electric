@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E40AF"/>
+      <stop offset="60%" stop-color="#60A5FA"/>
+      <stop offset="100%" stop-color="#DBEAFE"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FEF3C7"/>
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0.3"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#sky)"/>
+  <!-- Ground -->
+  <rect x="0" y="280" width="600" height="120" fill="url(#ground)"/>
+  <!-- Sun -->
+  <circle cx="480" cy="80" r="35" fill="#F59E0B" fill-opacity="0.6"/>
+  <circle cx="480" cy="80" r="50" fill="#F59E0B" fill-opacity="0.15"/>
+  <!-- Solar panels -->
+  <g transform="translate(100, 240)">
+    <rect x="0" y="0" width="160" height="12" fill="#1E40AF" fill-opacity="0.6" stroke="white" stroke-width="1" rx="1"/>
+    <line x1="0" y1="6" x2="160" y2="6" stroke="white" stroke-width="0.5" stroke-opacity="0.5"/>
+    <line x1="40" y1="0" x2="40" y2="12" stroke="white" stroke-width="0.5" stroke-opacity="0.5"/>
+    <line x1="80" y1="0" x2="80" y2="12" stroke="white" stroke-width="0.5" stroke-opacity="0.5"/>
+    <line x1="120" y1="0" x2="120" y2="12" stroke="white" stroke-width="0.5" stroke-opacity="0.5"/>
+  </g>
+  <g transform="translate(100, 255)">
+    <rect x="0" y="0" width="160" height="12" fill="#1E40AF" fill-opacity="0.6" stroke="white" stroke-width="1" rx="1"/>
+    <line x1="0" y1="6" x2="160" y2="6" stroke="white" stroke-width="0.5" stroke-opacity="0.5"/>
+    <line x1="40" y1="0" x2="40" y2="12" stroke="white" stroke-width="0.5" stroke-opacity="0.5"/>
+    <line x1="80" y1="0" x2="80" y2="12" stroke="white" stroke-width="0.5" stroke-opacity="0.5"/>
+    <line x1="120" y1="0" x2="120" y2="12" stroke="white" stroke-width="0.5" stroke-opacity="0.5"/>
+  </g>
+  <!-- Second row -->
+  <g transform="translate(320, 240)">
+    <rect x="0" y="0" width="160" height="12" fill="#1E40AF" fill-opacity="0.6" stroke="white" stroke-width="1" rx="1"/>
+    <line x1="0" y1="6" x2="160" y2="6" stroke="white" stroke-width="0.5" stroke-opacity="0.5"/>
+    <line x1="40" y1="0" x2="40" y2="12" stroke="white" stroke-width="0.5" stroke-opacity="0.5"/>
+    <line x1="80" y1="0" x2="80" y2="12" stroke="white" stroke-width="0.5" stroke-opacity="0.5"/>
+    <line x1="120" y1="0" x2="120" y2="12" stroke="white" stroke-width="0.5" stroke-opacity="0.5"/>
+  </g>
+  <g transform="translate(320, 255)">
+    <rect x="0" y="0" width="160" height="12" fill="#1E40AF" fill-opacity="0.6" stroke="white" stroke-width="1" rx="1"/>
+    <line x1="0" y1="6" x2="160" y2="6" stroke="white" stroke-width="0.5" stroke-opacity="0.5"/>
+    <line x1="40" y1="0" x2="40" y2="12" stroke="white" stroke-width="0.5" stroke-opacity="0.5"/>
+    <line x1="80" y1="0" x2="80" y2="12" stroke="white" stroke-width="0.5" stroke-opacity="0.5"/>
+    <line x1="120" y1="0" x2="120" y2="12" stroke="white" stroke-width="0.5" stroke-opacity="0.5"/>
+  </g>
+  <!-- Power line from panels -->
+  <line x1="180" y1="250" x2="250" y2="350" stroke="#F59E0B" stroke-width="3" stroke-opacity="0.6"/>
+  <line x1="400" y1="250" x2="350" y2="350" stroke="#F59E0B" stroke-width="3" stroke-opacity="0.6"/>
+  <!-- Grid connection box -->
+  <rect x="240" y="340" width="120" height="40" fill="#1E40AF" fill-opacity="0.25" stroke="white" stroke-width="1.5" rx="4"/>
+  <text x="300" y="365" text-anchor="middle" font-size="12" font-family="sans-serif" fill="white" font-weight="bold">GRID</text>
+</svg>

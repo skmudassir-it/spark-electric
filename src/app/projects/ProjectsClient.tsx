@@ -35,6 +35,7 @@ interface Project {
   icon: typeof faHouse;
   category: Category;
   gradient: string;
+  image: string;
 }
 
 // ── Project data ────────────────────────────────────────────────────
@@ -48,6 +49,7 @@ const projects: Project[] = [
     category: "residential",
     gradient:
       "linear-gradient(135deg, oklch(0.38 0.18 265), oklch(0.50 0.16 265))",
+    image: "/images/projects/lakeside-home-rewire.svg",
   },
   {
     slug: "modern-kitchen-lighting",
@@ -57,6 +59,7 @@ const projects: Project[] = [
     category: "residential",
     gradient:
       "linear-gradient(135deg, oklch(0.85 0.16 85), oklch(0.78 0.14 75))",
+    image: "/images/projects/modern-kitchen-lighting.svg",
   },
   {
     slug: "smart-home-upgrade",
@@ -66,6 +69,7 @@ const projects: Project[] = [
     category: "residential",
     gradient:
       "linear-gradient(135deg, oklch(0.38 0.18 265), oklch(0.50 0.16 265))",
+    image: "/images/projects/smart-home-upgrade.svg",
   },
   // Commercial
   {
@@ -76,6 +80,7 @@ const projects: Project[] = [
     category: "commercial",
     gradient:
       "linear-gradient(135deg, oklch(0.38 0.18 265), oklch(0.50 0.16 265))",
+    image: "/images/projects/downtown-office-build.svg",
   },
   {
     slug: "retail-center-power",
@@ -85,6 +90,7 @@ const projects: Project[] = [
     category: "commercial",
     gradient:
       "linear-gradient(135deg, oklch(0.85 0.16 85), oklch(0.78 0.14 75))",
+    image: "/images/projects/retail-center-power.svg",
   },
   {
     slug: "restaurant-renovation",
@@ -94,6 +100,7 @@ const projects: Project[] = [
     category: "commercial",
     gradient:
       "linear-gradient(135deg, oklch(0.38 0.18 265), oklch(0.50 0.16 265))",
+    image: "/images/projects/restaurant-renovation.svg",
   },
   // Industrial
   {
@@ -104,6 +111,7 @@ const projects: Project[] = [
     category: "industrial",
     gradient:
       "linear-gradient(135deg, oklch(0.38 0.18 265), oklch(0.50 0.16 265))",
+    image: "/images/projects/factory-floor-power.svg",
   },
   {
     slug: "warehouse-led-retrofit",
@@ -113,6 +121,7 @@ const projects: Project[] = [
     category: "industrial",
     gradient:
       "linear-gradient(135deg, oklch(0.85 0.16 85), oklch(0.78 0.14 75))",
+    image: "/images/projects/warehouse-led-retrofit.svg",
   },
   {
     slug: "solar-farm-connection",
@@ -122,6 +131,7 @@ const projects: Project[] = [
     category: "industrial",
     gradient:
       "linear-gradient(135deg, oklch(0.38 0.18 265), oklch(0.50 0.16 265))",
+    image: "/images/projects/solar-farm-connection.svg",
   },
 ];
 
@@ -254,14 +264,12 @@ function ProjectGrid({ projects }: { projects: Project[] }) {
     <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
       {projects.map((project) => (
         <Card key={project.slug} className="glass-card group overflow-hidden">
-          {/* ── Gradient placeholder with icon ── */}
-          <div
-            className="relative flex h-48 items-center justify-center"
-            style={{ background: project.gradient }}
-          >
-            <FontAwesomeIcon
-              icon={project.icon}
-              className="size-14 text-white/60 drop-shadow-lg"
+          {/* ── Project image ── */}
+          <div className="relative h-48">
+            <img
+              src={project.image}
+              alt={project.title}
+              className="w-full h-full object-cover"
             />
 
             {/* Category badge — top-right */}

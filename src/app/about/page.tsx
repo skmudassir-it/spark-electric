@@ -5,7 +5,6 @@ import {
   faShieldHalved,
   faHeart,
   faLeaf,
-  faUser,
   faAward,
   faHouse,
   faArrowRight,
@@ -29,24 +28,28 @@ const teamMembers = [
     role: "Master Electrician / Founder",
     exp: "20+ years experience",
     bio: "Founded Spark Electric in 2005 with a vision to provide honest, high-quality electrical services. James oversees every major project and personally ensures our standards are met.",
+    image: "/images/team/james-wilson.svg",
   },
   {
     name: "Maria Santos",
     role: "Senior Electrician",
     exp: "15+ years experience",
     bio: "Maria specializes in residential wiring and smart home installations. Her attention to detail and commitment to safety make her a client favorite for home projects.",
+    image: "/images/team/maria-santos.svg",
   },
   {
     name: "David Chen",
     role: "Commercial Specialist",
     exp: "12+ years experience",
     bio: "David leads our commercial division, handling everything from office build-outs to industrial panel upgrades. His expertise in three-phase systems is unmatched.",
+    image: "/images/team/david-chen.svg",
   },
   {
     name: "Aisha Johnson",
     role: "Project Manager",
     exp: "10+ years experience",
     bio: "Aisha keeps every project on track and on budget. From scheduling to permitting, she ensures a seamless experience for every Spark Electric client.",
+    image: "/images/team/aisha-johnson.svg",
   },
 ];
 
@@ -206,11 +209,13 @@ export default function AboutPage() {
 
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {teamMembers.map((member) => (
-              <Card key={member.name} className="glass-card text-center">
+              <Card key={member.name} className="glass-card text-center overflow-hidden">
                 <CardHeader className="pb-3">
-                  <div className="mx-auto mb-3 flex size-16 items-center justify-center rounded-full bg-primary/10 text-primary">
-                    <FontAwesomeIcon icon={faUser} className="size-6" />
-                  </div>
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="mx-auto mb-3 size-24 rounded-full object-cover"
+                  />
                   <CardTitle className="text-lg">{member.name}</CardTitle>
                   <CardDescription className="font-medium text-primary">
                     {member.role}

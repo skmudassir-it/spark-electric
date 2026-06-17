@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EFF6FF"/>
+      <stop offset="100%" stop-color="#DBEAFE"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <!-- House -->
+  <polygon points="140,80 200,40 260,80" fill="none" stroke="#1E40AF" stroke-width="2.5"/>
+  <rect x="155" y="80" width="90" height="70" fill="none" stroke="#1E40AF" stroke-width="2"/>
+  <rect x="175" y="105" width="20" height="20" fill="none" stroke="#1E40AF" stroke-width="1.5"/>
+  <rect x="205" y="105" width="20" height="20" fill="none" stroke="#1E40AF" stroke-width="1.5"/>
+  <rect x="190" y="130" width="20" height="20" fill="#1E40AF" fill-opacity="0.15" rx="2"/>
+  <!-- Wifi icon -->
+  <path d="M200,165 Q210,150 200,135" fill="none" stroke="#1E40AF" stroke-width="2"/>
+  <path d="M192,168 Q210,145 208,130" fill="none" stroke="#1E40AF" stroke-width="2"/>
+  <path d="M184,172 Q210,140 216,125" fill="none" stroke="#1E40AF" stroke-width="2"/>
+  <circle cx="200" cy="175" r="3" fill="#1E40AF"/>
+  <!-- Smart icons around house -->
+  <!-- Light icon -->
+  <circle cx="120" cy="120" r="15" fill="#F59E0B" fill-opacity="0.15" stroke="#F59E0B" stroke-width="1.5"/>
+  <line x1="120" y1="108" x2="120" y2="132" stroke="#F59E0B" stroke-width="1.5"/>
+  <line x1="108" y1="120" x2="132" y2="120" stroke="#F59E0B" stroke-width="1.5"/>
+  <!-- Lock icon -->
+  <circle cx="280" cy="120" r="15" fill="#1E40AF" fill-opacity="0.15" stroke="#1E40AF" stroke-width="1.5"/>
+  <rect x="274" y="118" width="12" height="10" fill="none" stroke="#1E40AF" stroke-width="1.5" rx="1"/>
+  <path d="M276,118 L276,113 Q280,108 284,113 L284,118" fill="none" stroke="#1E40AF" stroke-width="1.5"/>
+  <!-- Thermostat icon -->
+  <rect x="270" y="180" width="24" height="36" fill="#1E40AF" fill-opacity="0.1" stroke="#1E40AF" stroke-width="1.5" rx="3"/>
+  <text x="282" y="202" text-anchor="middle" font-size="9" font-family="sans-serif" fill="#1E40AF" font-weight="bold">72°</text>
+  <!-- Camera icon -->
+  <rect x="270" y="240" width="28" height="20" fill="#1E40AF" fill-opacity="0.1" stroke="#1E40AF" stroke-width="1.5" rx="3"/>
+  <circle cx="284" cy="250" r="5" fill="none" stroke="#1E40AF" stroke-width="1"/>
+  <!-- Connection lines -->
+  <line x1="135" y1="120" x2="155" y2="100" stroke="#F59E0B" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="3,3"/>
+  <line x1="245" y1="100" x2="265" y2="120" stroke="#F59E0B" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="3,3"/>
+  <line x1="245" y1="130" x2="270" y2="190" stroke="#1E40AF" stroke-width="1" stroke-opacity="0.2" stroke-dasharray="3,3"/>
+</svg>

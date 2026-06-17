@@ -38,6 +38,7 @@ interface ServiceItem {
   title: string;
   description: string;
   icon: typeof faBolt;
+  image: string;
   features: string[];
 }
 
@@ -46,6 +47,7 @@ const services: ServiceItem[] = [
     title: "Residential Wiring",
     description: "Complete home wiring solutions",
     icon: faHouse,
+    image: "/images/services/residential-wiring.svg",
     features: [
       "New construction & remodel wiring",
       "Outlet & switch installation",
@@ -56,6 +58,7 @@ const services: ServiceItem[] = [
     title: "Commercial Electrical",
     description: "Office & retail electrical systems",
     icon: faBuilding,
+    image: "/images/services/commercial-electrical.svg",
     features: [
       "Tenant improvement wiring",
       "Lighting retrofits & upgrades",
@@ -66,6 +69,7 @@ const services: ServiceItem[] = [
     title: "Panel Upgrades",
     description: "Modern panel replacements",
     icon: faBolt,
+    image: "/images/services/panel-upgrades.svg",
     features: [
       "100A to 200A+ upgrades",
       "Smart panel installation",
@@ -76,6 +80,7 @@ const services: ServiceItem[] = [
     title: "Lighting Design",
     description: "Custom lighting solutions",
     icon: faLightbulb,
+    image: "/images/services/lighting-design.svg",
     features: [
       "Interior & exterior design",
       "LED retrofit consultation",
@@ -86,6 +91,7 @@ const services: ServiceItem[] = [
     title: "Emergency Repairs",
     description: "24/7 rapid response",
     icon: faTriangleExclamation,
+    image: "/images/services/emergency-repairs.svg",
     features: [
       "Same-day service available",
       "Power outage troubleshooting",
@@ -96,6 +102,7 @@ const services: ServiceItem[] = [
     title: "EV Charger Install",
     description: "Home & business charging",
     icon: faChargingStation,
+    image: "/images/services/ev-charger-install.svg",
     features: [
       "Level 2 charger setup",
       "Panel capacity assessment",
@@ -106,6 +113,7 @@ const services: ServiceItem[] = [
     title: "Smart Home",
     description: "Home automation systems",
     icon: faHouseLaptop,
+    image: "/images/services/smart-home.svg",
     features: [
       "Smart lighting & switches",
       "Voice control integration",
@@ -116,6 +124,7 @@ const services: ServiceItem[] = [
     title: "Safety Inspections",
     description: "Thorough electrical inspections",
     icon: faClipboardCheck,
+    image: "/images/services/safety-inspections.svg",
     features: [
       "Whole-home safety audits",
       "Insurance inspection reports",
@@ -213,7 +222,12 @@ export default function ServicesPage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {services.map((service) => (
-              <Card key={service.title} className="glass-card group">
+              <Card key={service.title} className="glass-card group overflow-hidden">
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="w-full h-44 object-cover"
+                />
                 <CardHeader>
                   <div className="flex size-12 items-center justify-center rounded-full bg-primary/10 text-primary mb-3 group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
                     <FontAwesomeIcon

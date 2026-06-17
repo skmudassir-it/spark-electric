@@ -30,21 +30,25 @@ const services = [
     icon: faHouse,
     title: "Residential",
     description: "Home wiring, lighting, panel upgrades",
+    image: "/images/services/residential-wiring.svg",
   },
   {
     icon: faBuilding,
     title: "Commercial",
     description: "Office, retail & industrial electrical",
+    image: "/images/services/commercial-electrical.svg",
   },
   {
     icon: faExclamationTriangle,
     title: "Emergency",
     description: "24/7 rapid response repairs",
+    image: "/images/services/emergency-repairs.svg",
   },
   {
     icon: faIndustry,
     title: "Industrial",
     description: "Heavy-duty power solutions",
+    image: "/images/projects/factory-floor-power.svg",
   },
 ];
 
@@ -91,7 +95,14 @@ export default function Home() {
       {/* ═══════════════════════════════════════════════════════════
           HERO
       ═══════════════════════════════════════════════════════════ */}
-      <section className="relative flex min-h-screen items-center justify-center bg-hero-pattern px-4 py-20">
+      <section
+        className="relative flex min-h-screen items-center justify-center bg-hero-pattern px-4 py-20"
+        style={{
+          backgroundImage: "url('/images/hero-bg.svg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
         <div className="glass-strong mx-auto w-full max-w-3xl rounded-2xl p-8 text-center shadow-xl sm:p-12 lg:p-14">
           <Badge className="mb-5" variant="secondary">
             ⚡ 24/7 Emergency Service
@@ -137,7 +148,12 @@ export default function Home() {
 
           <div className="mt-14 grid grid-cols-1 gap-6 sm:gap-8 md:grid-cols-2">
             {services.map((service) => (
-              <Card key={service.title} className="glass-card group">
+              <Card key={service.title} className="glass-card group overflow-hidden">
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="w-full h-40 object-cover"
+                />
                 <CardHeader>
                   <div className="mb-3 flex size-12 items-center justify-center rounded-full bg-primary/10 text-primary transition-transform group-hover:scale-110">
                     <FontAwesomeIcon icon={service.icon} className="size-5" />

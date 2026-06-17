@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FEF3C7"/>
+      <stop offset="100%" stop-color="#FDE68A"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)"/>
+  <!-- Wall -->
+  <rect x="50" y="100" width="500" height="250" fill="#F8FAFC" stroke="#1E40AF" stroke-width="1.5" stroke-opacity="0.2"/>
+  <!-- Counter -->
+  <rect x="50" y="260" width="500" height="90" fill="#1E40AF" fill-opacity="0.08" stroke="#1E40AF" stroke-width="1.5" stroke-opacity="0.2"/>
+  <!-- Cabinets -->
+  <rect x="70" y="110" width="140" height="140" fill="#1E40AF" fill-opacity="0.1" stroke="#1E40AF" stroke-width="1.5" rx="3"/>
+  <rect x="230" y="110" width="140" height="140" fill="#1E40AF" fill-opacity="0.1" stroke="#1E40AF" stroke-width="1.5" rx="3"/>
+  <rect x="390" y="110" width="140" height="140" fill="#1E40AF" fill-opacity="0.1" stroke="#1E40AF" stroke-width="1.5" rx="3"/>
+  <!-- Pendant lights -->
+  <line x1="140" y1="100" x2="140" y2="70" stroke="#1E40AF" stroke-width="1.5"/>
+  <circle cx="140" cy="65" r="10" fill="#F59E0B" fill-opacity="0.6"/>
+  <line x1="300" y1="100" x2="300" y2="70" stroke="#1E40AF" stroke-width="1.5"/>
+  <circle cx="300" cy="65" r="10" fill="#F59E0B" fill-opacity="0.6"/>
+  <line x1="460" y1="100" x2="460" y2="70" stroke="#1E40AF" stroke-width="1.5"/>
+  <circle cx="460" cy="65" r="10" fill="#F59E0B" fill-opacity="0.6"/>
+  <!-- Warm light glow -->
+  <circle cx="140" cy="65" r="25" fill="#F59E0B" fill-opacity="0.15"/>
+  <circle cx="300" cy="65" r="25" fill="#F59E0B" fill-opacity="0.15"/>
+  <circle cx="460" cy="65" r="25" fill="#F59E0B" fill-opacity="0.15"/>
+  <!-- Under-cabinet LED strip -->
+  <rect x="70" y="248" width="140" height="6" fill="#F59E0B" fill-opacity="0.5" rx="2"/>
+  <rect x="230" y="248" width="140" height="6" fill="#F59E0B" fill-opacity="0.5" rx="2"/>
+  <rect x="390" y="248" width="140" height="6" fill="#F59E0B" fill-opacity="0.5" rx="2"/>
+</svg>
