@@ -49,7 +49,7 @@ const projects: Project[] = [
     category: "residential",
     gradient:
       "linear-gradient(135deg, oklch(0.38 0.18 265), oklch(0.50 0.16 265))",
-    image: "/images/projects/lakeside-home-rewire.svg",
+    image: "/images/projects/lakeside-home-rewire.jpg",
   },
   {
     slug: "modern-kitchen-lighting",
@@ -59,7 +59,7 @@ const projects: Project[] = [
     category: "residential",
     gradient:
       "linear-gradient(135deg, oklch(0.85 0.16 85), oklch(0.78 0.14 75))",
-    image: "/images/projects/modern-kitchen-lighting.svg",
+    image: "/images/projects/modern-kitchen-lighting.jpg",
   },
   {
     slug: "smart-home-upgrade",
@@ -69,7 +69,7 @@ const projects: Project[] = [
     category: "residential",
     gradient:
       "linear-gradient(135deg, oklch(0.38 0.18 265), oklch(0.50 0.16 265))",
-    image: "/images/projects/smart-home-upgrade.svg",
+    image: "/images/projects/smart-home-upgrade.jpg",
   },
   // Commercial
   {
@@ -80,7 +80,7 @@ const projects: Project[] = [
     category: "commercial",
     gradient:
       "linear-gradient(135deg, oklch(0.38 0.18 265), oklch(0.50 0.16 265))",
-    image: "/images/projects/downtown-office-build.svg",
+    image: "/images/projects/downtown-office-build.jpg",
   },
   {
     slug: "retail-center-power",
@@ -90,7 +90,7 @@ const projects: Project[] = [
     category: "commercial",
     gradient:
       "linear-gradient(135deg, oklch(0.85 0.16 85), oklch(0.78 0.14 75))",
-    image: "/images/projects/retail-center-power.svg",
+    image: "/images/projects/retail-center-power.jpg",
   },
   {
     slug: "restaurant-renovation",
@@ -100,7 +100,7 @@ const projects: Project[] = [
     category: "commercial",
     gradient:
       "linear-gradient(135deg, oklch(0.38 0.18 265), oklch(0.50 0.16 265))",
-    image: "/images/projects/restaurant-renovation.svg",
+    image: "/images/projects/restaurant-renovation.jpg",
   },
   // Industrial
   {
@@ -111,7 +111,7 @@ const projects: Project[] = [
     category: "industrial",
     gradient:
       "linear-gradient(135deg, oklch(0.38 0.18 265), oklch(0.50 0.16 265))",
-    image: "/images/projects/factory-floor-power.svg",
+    image: "/images/projects/factory-floor-power.jpg",
   },
   {
     slug: "warehouse-led-retrofit",
@@ -121,7 +121,7 @@ const projects: Project[] = [
     category: "industrial",
     gradient:
       "linear-gradient(135deg, oklch(0.85 0.16 85), oklch(0.78 0.14 75))",
-    image: "/images/projects/warehouse-led-retrofit.svg",
+    image: "/images/projects/warehouse-led-retrofit.jpg",
   },
   {
     slug: "solar-farm-connection",
@@ -131,7 +131,7 @@ const projects: Project[] = [
     category: "industrial",
     gradient:
       "linear-gradient(135deg, oklch(0.38 0.18 265), oklch(0.50 0.16 265))",
-    image: "/images/projects/solar-farm-connection.svg",
+    image: "/images/projects/solar-farm-connection.jpg",
   },
 ];
 

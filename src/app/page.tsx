@@ -30,25 +30,25 @@ const services = [
     icon: faHouse,
     title: "Residential",
     description: "Home wiring, lighting, panel upgrades",
-    image: "/images/services/residential-wiring.svg",
+    image: "/images/services/residential-wiring.jpg",
   },
   {
     icon: faBuilding,
     title: "Commercial",
     description: "Office, retail & industrial electrical",
-    image: "/images/services/commercial-electrical.svg",
+    image: "/images/services/commercial-electrical.jpg",
   },
   {
     icon: faExclamationTriangle,
     title: "Emergency",
     description: "24/7 rapid response repairs",
-    image: "/images/services/emergency-repairs.svg",
+    image: "/images/services/emergency-repairs.jpg",
   },
   {
     icon: faIndustry,
     title: "Industrial",
     description: "Heavy-duty power solutions",
-    image: "/images/projects/factory-floor-power.svg",
+    image: "/images/projects/factory-floor-power.jpg",
   },
 ];
 
@@ -98,7 +98,7 @@ export default function Home() {
       <section
         className="relative flex min-h-screen items-center justify-center bg-hero-pattern px-4 py-20"
         style={{
-          backgroundImage: "url('/images/hero-bg.svg')",
+          backgroundImage: "url('/images/hero-bg.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

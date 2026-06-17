@@ -47,7 +47,7 @@ const services: ServiceItem[] = [
     title: "Residential Wiring",
     description: "Complete home wiring solutions",
     icon: faHouse,
-    image: "/images/services/residential-wiring.svg",
+    image: "/images/services/residential-wiring.jpg",
     features: [
       "New construction & remodel wiring",
       "Outlet & switch installation",
@@ -58,7 +58,7 @@ const services: ServiceItem[] = [
     title: "Commercial Electrical",
     description: "Office & retail electrical systems",
     icon: faBuilding,
-    image: "/images/services/commercial-electrical.svg",
+    image: "/images/services/commercial-electrical.jpg",
     features: [
       "Tenant improvement wiring",
       "Lighting retrofits & upgrades",
@@ -69,7 +69,7 @@ const services: ServiceItem[] = [
     title: "Panel Upgrades",
     description: "Modern panel replacements",
     icon: faBolt,
-    image: "/images/services/panel-upgrades.svg",
+    image: "/images/services/panel-upgrades.jpg",
     features: [
       "100A to 200A+ upgrades",
       "Smart panel installation",
@@ -80,7 +80,7 @@ const services: ServiceItem[] = [
     title: "Lighting Design",
     description: "Custom lighting solutions",
     icon: faLightbulb,
-    image: "/images/services/lighting-design.svg",
+    image: "/images/services/lighting-design.jpg",
     features: [
       "Interior & exterior design",
       "LED retrofit consultation",
@@ -91,7 +91,7 @@ const services: ServiceItem[] = [
     title: "Emergency Repairs",
     description: "24/7 rapid response",
     icon: faTriangleExclamation,
-    image: "/images/services/emergency-repairs.svg",
+    image: "/images/services/emergency-repairs.jpg",
     features: [
       "Same-day service available",
       "Power outage troubleshooting",
@@ -102,7 +102,7 @@ const services: ServiceItem[] = [
     title: "EV Charger Install",
     description: "Home & business charging",
     icon: faChargingStation,
-    image: "/images/services/ev-charger-install.svg",
+    image: "/images/services/ev-charger-install.jpg",
     features: [
       "Level 2 charger setup",
       "Panel capacity assessment",
@@ -113,7 +113,7 @@ const services: ServiceItem[] = [
     title: "Smart Home",
     description: "Home automation systems",
     icon: faHouseLaptop,
-    image: "/images/services/smart-home.svg",
+    image: "/images/services/smart-home.jpg",
     features: [
       "Smart lighting & switches",
       "Voice control integration",
@@ -124,7 +124,7 @@ const services: ServiceItem[] = [
     title: "Safety Inspections",
     description: "Thorough electrical inspections",
     icon: faClipboardCheck,
-    image: "/images/services/safety-inspections.svg",
+    image: "/images/services/safety-inspections.jpg",
     features: [
       "Whole-home safety audits",
       "Insurance inspection reports",
